@@ -1,0 +1,19 @@
+<Context>
+	<!--<ResourceLink name="jdbc/ConnPoolTestDB"-->
+		<!--global="jdbc/ConnPoolTestDB"-->
+		<!--type="javax.sql.DataSource"	/>-->
+
+	<Resource name="jdbc/ConnPoolTestDB"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		auth="Container"
+		type="javax.sql.DataSource"
+		username="root"
+		password="1111"
+		driverClassName="com.mysql.jdbc.Driver"
+		description="Connection Pool Example."
+		url="jdbc:mysql://localhost:3306/springrestful"
+		maxTotal="10"
+		maxWaitMillis="10000"
+		removeAbandonedTimeout="300"
+		defaultAutoCommit="true" />
+</Context>
